@@ -1,1 +1,21 @@
 WANS experiment 1 and 2
+
+-----------------------------------------------------------------
+you can clone running a command:
+git clone git@github.com:juyoung/NUSA.git
+
+-----------------------------------------------------------------
+After the modification, you update your local copy by running:
+git add files
+git commit -m 'experiment1N2'
+
+in one step, you can use 
+git commit -a -m 'experiment1N2'
+
+-----------------------------------------------------------------
+After updating the local copy, update the global repository:
+git push origin master
+
+
+-----------------------------------------------------------------
+maintain the local copy uptodate by copying the new data from global repository
