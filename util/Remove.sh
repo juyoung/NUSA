@@ -1,0 +1,13 @@
+rm ./video.result
+rm ./voip1.result
+rm ./voip2.result
+rm ./voip3.result
+rm ./data1.result
+rm ./data2.result
+rm ./out.tr
+rm ./*.eps
+rm ./*.jitter
+rm ./drop.packet
+rm ./results.EED
+rm ./path.txt
+rm ./param.txt

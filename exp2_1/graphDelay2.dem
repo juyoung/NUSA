@@ -1,0 +1,18 @@
+set term postscript eps color blacktext
+set title "Average delay with different queue size at 500Kb BW"
+set xlabel "Queue size (logscale)"
+set ylabel "Average Delay in seconds"
+unset logscale; set logscale x
+set grid
+set key above
+set style data linespoint
+set output "AvgDelay500Kb.eps"
+plot "1.500" using 1:2 title "Video", \
+     "2.500" using 1:2 title "Voip1", \
+     "3.500" using 1:2 title "Voip2", \
+     "4.500" using 1:2 title "Voip3", \
+     "5.500" using 1:2 title "Data1", \
+     "6.500" using 1:2 title "Data2" 
+unset label
+set output
+quit

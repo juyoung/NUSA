@@ -1,0 +1,11 @@
+:set term postscript eps color blacktext
+:set xlabel 
+:set ylabel 
+:set grid
+:set key above
+:set style data linespoint
+:set output
+:plot
+:unset label
+:set output
+:quit

@@ -1,0 +1,19 @@
+set term postscript eps color blacktext
+set title "Drop rate with different queue size at 1Mb BW"
+set xlabel "Queue size (logscale)"
+set ylabel "Drop rate (%)"
+set yrange [0:100]
+unset logscale; set logscale x
+set grid
+set key above
+set style data linespoint
+set output "DropRate1Mb.eps"
+plot "1.1000" using 1:2 title "Video", \
+     "2.1000" using 1:2 title "Voip1", \
+     "3.1000" using 1:2 title "Voip2", \
+     "4.1000" using 1:2 title "Voip3", \
+     "5.1000" using 1:2 title "Data1", \
+     "6.1000" using 1:2 title "Data2" 
+unset label
+set output
+quit

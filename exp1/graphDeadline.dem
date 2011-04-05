@@ -1,0 +1,19 @@
+set term postscript eps color blacktext
+set title "Deadline Missing Packets with infinite queue size"
+set xlabel "Bandwidth (Kbps)"
+set ylabel "Rate of late packets (%)"
+set yrange [0:100]
+#unset logscale; set logscale y
+set grid
+set key above
+set style data linespoint
+set output "deadlineEED.eps"
+plot "1.traffic" using 2:7 title "Video", \
+     "2.traffic" using 2:7 title "Voip1", \
+     "3.traffic" using 2:7 title "Voip2", \
+     "4.traffic" using 2:7 title "Voip3", \
+     "5.traffic" using 2:7 title "Data1", \
+     "6.traffic" using 2:7 title "Data2" 
+unset label
+set output
+quit
